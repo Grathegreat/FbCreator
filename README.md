@@ -21,8 +21,6 @@ TO RUN FILES JUST TYPE
 ```
 python FbCreator.py
 ```
-👉For pc use  Command Prompt <br>
-👉For android use  Pydroid 3
   
 Report Bugs, Give Feature Requests There..   
 
