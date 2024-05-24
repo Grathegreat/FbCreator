@@ -1,8 +1,4 @@
-print(f"""
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓           
-❖ › Github :- @jatintiwari0 
-❖ › By      :- JATIN TIWARI
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛                """)
+print(f"""█▀▄▀█ █▀█ ▀█▀/n█░▀░█ █▄█ ░█░""")
 print('\x1b[38;5;208m⇼'*60)
 print('\x1b[38;5;22m•'*60)
 print('\x1b[38;5;22m•'*60)
@@ -35,7 +31,7 @@ def create_mail_tm_account():
         domain = random.choice(mail_domains)['domain']
         username = generate_random_string(10)
         password = fake.password()
-        birthday = fake.date_of_birth(minimum_age=18, maximum_age=45)
+        birthday = fake.date_of_birth(minimum_age=18, maximum_age=20)
         first_name = fake.first_name()
         last_name = fake.last_name()
         url = "https://api.mail.tm/accounts"
@@ -66,16 +62,16 @@ def register_facebook_account(email, password, first_name, last_name, birthday):
     id=reg['new_user_id']
     token=reg['session_info']['access_token']
     print(f'''
-\x1b[38;5;22m⋘▬▭▬▭▬▭▬﴾𓆩OK𓆪﴿▬▭▬▭▬▭▬⋙
-﴾𝐕𝐈𝐏﴿ EMAIL : {email}
-﴾𝐕𝐈𝐏﴿ ID : {id}
-﴾𝐕𝐈𝐏﴿ PASSWORD : {password}
-﴾𝐕𝐈𝐏﴿ NAME : {first_name} {last_name}
-﴾𝐕𝐈𝐏﴿ BIRTHDAY : {birthday} 
-﴾𝐕𝐈𝐏﴿GENDER : {gender}
-⋘▬▭▬▭▬▭▬﴾𓆩OK𓆪﴿▬▭▬▭▬▭▬⋙
-﴾𝐕𝐈𝐏﴿ Token : {token}
-⋘▬▭▬▭▬▭▬﴾𓆩OK𓆪﴿▬▭▬▭▬▭▬⋙''')
+\x1b[38;5;22m🜲▬▭▬▭▬▭▬﴾⫷𝗢𝗞⫸﴿▬▭▬▭▬▭▬🜲
+﴾𝐌𝐎𝐓﴿ 𝙀𝙈𝘼𝙄𝙇 : {email}
+﴾𝐌𝐎𝐓﴿ 𝙄𝘿 : {id}
+﴾𝐌𝐎𝐓﴿ 𝙋𝘼𝙎𝙎𝙒𝙊𝙍𝘿 : {password}
+﴾𝐌𝐎𝐓﴿ 𝙉𝘼𝙈𝙀 : {first_name} {last_name}
+﴾𝐌𝐎𝐓﴿ 𝘽𝙄𝙍𝙏𝙃𝘿𝘼𝙔 : {birthday} 
+﴾𝐌𝐎𝐓﴿ 𝙂𝙀𝙉𝘿𝙀𝙍 : {gender}
+🜲▬▭▬▭▬▭▬﴾⫷𝗢𝗞⫸﴿▬▭▬▭▬▭▬🜲
+﴾𝐌𝐎𝐓﴿ 𝙏𝙊𝙆𝙀𝙉 : {token}
+🜲▬▭▬▭▬▭▬﴾⫷𝗢𝗞⫸﴿▬▭▬▭▬▭▬🜲''')
 open('username.txt','a')
 def _call(url, params, post=True):
     headers = {'User-Agent': '[FBAN/FB4A;FBAV/35.0.0.48.273;FBDM/{density=1.33125,width=800,height=1205};FBLC/en_US;FBCR/;FBPN/com.facebook.katana;FBDV/Nexus 7;FBSV/4.1.1;FBBK/0;]'}
@@ -84,7 +80,7 @@ def _call(url, params, post=True):
     else:
         response = requests.get(url, params=params, headers=headers)
     return response.json()
-for i in range(int(input('[+] How Many Accounts You Want:  '))):
+for i in range(int(input('[+] 𝙃𝙊𝙒 𝙈𝘼𝙉𝙔 𝘼𝘾𝘾𝙊𝙐𝙉𝙏𝙎 𝙔𝙊𝙐 𝙒𝘼𝙉𝙏:  '))):
  email, password, first_name, last_name, birthday = create_mail_tm_account()
  if email and password and first_name and last_name and birthday:
   register_facebook_account(email, password, first_name, last_name, birthday)
