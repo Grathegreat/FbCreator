@@ -66,7 +66,7 @@ def register_facebook_account(email, password, first_name, last_name, birthday):
     id=reg['new_user_id']
     token=reg['session_info']['access_token']
     print(f'''
-EMAIL : {email}
+\x1b[38;5;22mEMAIL : {email}
 ID : {id}
 PASSWORD : {password}
 NAME : {first_name} {last_name}
