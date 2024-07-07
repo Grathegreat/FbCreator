@@ -16,6 +16,8 @@ pip install faker
 
 pip install hashlib
 
+git clone https://github.con/Grathegreat/create
+
 ```
 TO RUN FILES JUST TYPE
 ```
