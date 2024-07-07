@@ -17,7 +17,7 @@ def generate_random_string(length):
     letters_and_digits = string.ascii_letters + string.digits
     return ''.join(random.choice(letters_and_digits) for i in range(length))
 def get_mail_domains():
-    url = "https://api.mail.tm/domains"
+    url = "https://api.mail.tm/accounts"
     try:
         response = requests.get(url)
         if response.status_code == 200:
