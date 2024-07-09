@@ -21,11 +21,6 @@ banner = r"""
 # Print the banner with lolcat coloring
 os.system(f'echo "{banner}" | lolcat')
 
-print('\x1b[38;5;208m⇼'*60)
-print('\x1b[38;5;22m•'*60)
-print('\x1b[38;5;22m•'*60)
-print('\x1b[38;5;208m⇼'*60)
-
 # Rest of your code continues here
 import requests
 import random
