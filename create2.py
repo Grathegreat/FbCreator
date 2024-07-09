@@ -8,19 +8,31 @@ def clear_screen():
 # Clear the screen
 clear_screen()
 
-# Your existing code follows here
+# ANSI color codes
+purple = '\033[95m'
+cyan = '\033[96m'
+darkcyan = '\033[36m'
+blue = '\033[94m'
+green = '\033[92m'
+yellow = '\033[93m'
+red = '\033[91m'
+bold = '\033[1m'
+underline = '\033[4m'
+end = '\033[0m'
+
+# Your ASCII art with colors
 print(f"""
- ██████╗██████╗ ███████╗ █████╗ ████████╗███████╗
+{purple}{bold} ██████╗██████╗ ███████╗ █████╗ ████████╗███████╗
 ██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔════╝
 ██║     ██████╔╝█████╗  ███████║   ██║   █████╗  
 ██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██╔══╝  
 ╚██████╗██║  ██║███████╗██║  ██║   ██║   ███████╗
  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝
-""")
-print('\x1b[38;5;208m⇼'*60)
-print('\x1b[38;5;22m•'*60)
-print('\x1b[38;5;22m•'*60)
-print('\x1b[38;5;208m⇼'*60)
+{end}""")
+print(f"{yellow}⇼"*60)
+print(f"{green}•"*60)
+print(f"{green}•"*60)
+print(f"{yellow}⇼"*60)
 
 # Rest of your code continues here
 import requests
