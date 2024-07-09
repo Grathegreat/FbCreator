@@ -85,7 +85,7 @@ def _call(url, params, post=True):
         response = requests.get(url, params=params, headers=headers)
     return response.json()
 for i in range(int(input('[+] How Many Accounts You Want:  '))):
- email, password, first_name, last_name, birthday = create_mail_tm_account()
+ email, password, first_name, last_name, birthday = create_temp-mail_account()
  if email and password and first_name and last_name and birthday:
   register_facebook_account(email, password, first_name, last_name, birthday)
 print('\x1b[38;5;208m⇼'*60)  
