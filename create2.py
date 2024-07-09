@@ -1,3 +1,14 @@
+# Import the necessary modules
+import os
+
+# Function to clear the terminal screen in Termux
+def clear_screen():
+    os.system('clear')  # Termux clear command
+
+# Clear the screen
+clear_screen()
+
+# Your existing code follows here
 print(f"""
  ██████╗██████╗ ███████╗ █████╗ ████████╗███████╗
 ██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔════╝
@@ -10,12 +21,16 @@ print('\x1b[38;5;208m⇼'*60)
 print('\x1b[38;5;22m•'*60)
 print('\x1b[38;5;22m•'*60)
 print('\x1b[38;5;208m⇼'*60)
+
+# Rest of your code continues here
 import requests
 import random
 import string
 import json
 import hashlib
 from faker import Faker
+
+# Define your functions and main script logic below...
 def generate_random_string(length):
     letters_and_digits = string.ascii_letters + string.digits
     return ''.join(random.choice(letters_and_digits) for i in range(length))
