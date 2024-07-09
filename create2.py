@@ -17,7 +17,7 @@ def generate_random_string(length):
     letters_and_digits = string.ascii_letters + string.digits
     return ''.join(random.choice(letters_and_digits) for i in range(length))
 def get_mail_domains():
-    url = "https://api.mail.tm/accounts"
+    url = "https://api.mail.tm/domains"
     try:
         response = requests.get(url)
         if response.status_code == 200:
@@ -66,16 +66,16 @@ def register_facebook_account(email, password, first_name, last_name, birthday):
     id=reg['new_user_id']
     token=reg['session_info']['access_token']
     print(f'''
-\x1b[38;5;22mEMAIL : {email}
-ID : {id}
-PASSWORD : {password}
-NAME : {first_name} {last_name}
-BIRTHDAY : {birthday} 
-GENDER : {gender}
-
-==================================
-Token : {token}
-''')
+\x1b[38;5;22m⋘▬▭▬▭▬▭▬﴾𓆩Mot𓆪﴿▬▭▬▭▬▭▬⋙
+﴾𝐕𝐈𝐏﴿ EMAIL : {email}
+﴾𝐕𝐈𝐏﴿ ID : {id}
+﴾𝐕𝐈𝐏﴿ PASSWORD : {password}
+﴾𝐕𝐈𝐏﴿ NAME : {first_name} {last_name}
+﴾𝐕𝐈𝐏﴿ BIRTHDAY : {birthday} 
+﴾𝐕𝐈𝐏﴿GENDER : {gender}
+⋘▬▭▬▭▬▭▬﴾𓆩Mot𓆪﴿▬▭▬▭▬▭▬⋙
+﴾𝐕𝐈𝐏﴿ Token : {token}
+⋘▬▭▬▭▬▭▬﴾𓆩Mot𓆪﴿▬▭▬▭▬▭▬⋙''')
 open('username.txt','a')
 def _call(url, params, post=True):
     headers = {'User-Agent': '[FBAN/FB4A;FBAV/35.0.0.48.273;FBDM/{density=1.33125,width=800,height=1205};FBLC/en_US;FBCR/;FBPN/com.facebook.katana;FBDV/Nexus 7;FBSV/4.1.1;FBBK/0;]'}
