@@ -1,4 +1,3 @@
-clear
 print(f"""
 AUTO CREATE FACEBOOK ACCOUNT WITH TEMPMAIL                """)
 print('\x1b[38;5;208m⇼'*60)
